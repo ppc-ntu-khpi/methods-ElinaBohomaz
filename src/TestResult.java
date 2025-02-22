@@ -1,12 +1,19 @@
-//package test;
+package test;
 
-//import domain.Exercise;
+import domain.Exercise;
 
 public class TestResult {
-
     public static void main(String[] args) {
+        // Дата народження
+        int day = 16;
+        int month = 7;
+        int year = 2007;
 
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        // Число долі
+        int fateNumber = Exercise.Calculate(day, month, year);
+
+        // результат
+        System.out.println("Дата народження " + day + "." + month + "." + year + 
+                         " число долі: " + fateNumber);
     }
 }
